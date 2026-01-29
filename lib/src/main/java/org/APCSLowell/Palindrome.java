@@ -8,12 +8,12 @@ public class Palindrome {
             if (s.substring(i,i+1).equals(" ")){
                 continue;
             }else{
-                n = n + s.substring(i,i+1);
-                s1 = s1 + s.substring(i,i+1);
+                n = n + s.substring(i,i+1).toLowerCase();
+                s1 = s1 + s.substring(i,i+1).toLowerCase();
             }
         }
         
-        if (s1.toLowerCase().equals(reverse(n.toLowerCase()))){
+        if (s1.equals(reverse(n))){
             return true;
         }else return false;
     }
