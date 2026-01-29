@@ -22,7 +22,7 @@ public class Palindrome {
        for (int i = s.length(); i > 0; i--){
         backward = backward + s.substring(i-1,i);
        }
-       return n;
+       return backward;
         
     }
 }
