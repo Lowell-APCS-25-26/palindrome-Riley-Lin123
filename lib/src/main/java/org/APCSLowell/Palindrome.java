@@ -5,7 +5,7 @@ public class Palindrome {
         String s1 = "";
         String n = "";
         for (int i = 0; i < s.length(); i++){
-            if (s.substring(i,i+1).equals(" ")){
+            if (s.substring(i,i+1).equals(" ") || !Character.isLetter(s.charAt(i))){
                 continue;
             }else{
                 n = n + s.substring(i,i+1).toLowerCase();
